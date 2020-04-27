@@ -28,3 +28,7 @@ The correct values should be ‘Manual’ and ‘-1.8’.
 http://10.10.10.11:8000/light#/light-sources
 ```
 ### ![light-sources](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/light-sources.PNG)
+
+### 9, the separate tab "Grid Shift" to the "Propagation Parameters" dialog
+[example script](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/sxn_v02_250ev_realzp-debug-intensity-watchpoint-56753227m_oc.py)
+### ![grid shift](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/propagator_gridshift.PNG)
