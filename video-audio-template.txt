@@ -1,0 +1,26 @@
+For now it opens the videos in a new browser window, although it would not be hard to change this so it displays the video in a pop-up window within the app.
+
+To add an overview video, add a "constants" section, similar to this:
+
+srw-schema.json:
+{
+    "constants": {
+        "helpVideoURL": "https://vimeo.com/184677009"
+    },
+    ...
+
+That link will appear under the help menu:
+
+ 
+
+
+To add a video to the modal dialogs, add a "helpVideoURL" attribute to the view which will be shown in the panel heading, for example:
+srw-schema.json:
+        "undulator": {
+            "title": "Idealized Undulator",
+            "helpVideoURL": "https://vimeo.com/184677009",
+            "basic": [],
+            "advanced": [
+              ...
+
+ 
