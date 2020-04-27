@@ -22,6 +22,7 @@ The correct values should be ‘Manual’ and ‘-1.8’.
 ### 6, disable "user register".
 ### 7, "demo videos" is ready to be added
 ### ![demo_video](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/demo_video.PNG)
+[demo_note](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/video-audio-template.txt)
 
 ### 8, the modification of official beamline logo in light-source page
 ```
