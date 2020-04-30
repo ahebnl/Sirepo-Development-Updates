@@ -2,7 +2,7 @@
 # Sirepo-Development-Updates
 this records the sirepo developments from NSLS-II
 
-### 10, add 'wm_fbk' to script...........
+### 10, will do : add 'wm_fbk' to script...........
 
 Before running a Sirepo-generated script of NERSC, you should add this option in it:
 
