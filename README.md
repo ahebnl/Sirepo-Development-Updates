@@ -43,9 +43,9 @@ The correct values should be ‘Manual’ and ‘-1.8’.
 * add “Compute Parameters from”, then when input ‘energy’ and ‘cff’ (or ‘grazing angle’), it will automatically calculate ‘grazing angle’ (or ‘cff’).
 * the orientation parameters will be updated synchronously with ‘grazing angle’
 * the orientation parameters in propagator will be updated synchronously.
-* add 'Heigh Profile' to grating field.
+* add 'Height Profile' to grating field.
 
 ### 1, For crystal, there are following updating:
 * the orientation parameters will be updated synchronously with ‘grazing angle’
 * the orientation parameters in propagator will be updated synchronously.
-* add 'Heigh Profile' to grating field.
+* add 'Height Profile' to grating field.
