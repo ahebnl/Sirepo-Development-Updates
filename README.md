@@ -20,7 +20,7 @@ Though this "'wm_fbk " option still has to be added in Sirepo and used there; ma
 
 ### 8, the modification of official beamline logo in light-source page
 ```
-http://10.10.10.11:8000/light#/light-sources
+https://expdev-test.nsls2.bnl.gov/light#/light-sources
 ```
 ### ![light-sources](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/light-sources.PNG)
 
