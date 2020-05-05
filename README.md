@@ -34,9 +34,10 @@ https://expdev-test.nsls2.bnl.gov/light#/light-sources
 
 ### 4, fixed the issue with initial conditions for e- trajectory for all examples.
 
-### 3, fixed some issue in the field of 'degree of coherence'.
 The correct values should be ‘Manual’ and ‘-1.8’.
 ### ![ebeam_initial](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/ebeam_initial.PNG)
+
+### 3, fixed some issue in the field of 'degree of coherence'.
 
 ### 2, For grating, there are following updating:
 * add “Compute Parameters from”, then when input ‘energy’ and ‘cff’ (or ‘grazing angle’), it will automatically calculate ‘grazing angle’ (or ‘cff’).
