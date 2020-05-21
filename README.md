@@ -30,7 +30,8 @@ https://expdev-test.nsls2.bnl.gov/light#/light-sources
 
 ### 6, disable "user register".
 
-### 5, 3D beamline plot generation without wavefront propagation calculation is done.
+### 5, 3D beamline plot generation without wavefront propagation calculation is done; 
+### ['op_fno', 's', 'beamline_orient.dat', 'file name for saving orientations of optical elements in the lab frame'] only show for "3D beamline".....
 
 ### 4, fixed the issue with initial conditions for e- trajectory for all examples.
 
