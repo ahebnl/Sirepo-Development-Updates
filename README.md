@@ -2,7 +2,7 @@
 # Sirepo-Development-Updates
 this records the sirepo developments from NSLS-II
 
-### 12, will do : add 'wm_fbk' to script...........
+### 12, To add 'wm_fbk' to script...........(not yet)
 
 Before running a Sirepo-generated script of NERSC, you should add this option in it:
 
@@ -29,8 +29,8 @@ https://expdev-test.nsls2.bnl.gov/light#/light-sources
 [demo_note](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/video-audio-template.txt)
 
 ### 8, disable "user register".
-
-### 7, 3D beamline plot generation without wavefront propagation calculation is done; 
+### 7_1, uploading the beamline orient data file to 3D beamline field is done;
+### 7_2, 3D beamline plot generation without wavefront propagation calculation is done; 
 ### ['op_fno', 's', 'beamline_orient.dat', 'file name for saving orientations of optical elements in the lab frame'] only show for "3D beamline".....
 
 ### 6, fixed the following 'Sampling Method' issues in "Intensity, 20m" report:
@@ -68,6 +68,8 @@ The correct values should be ‘Manual’ and ‘-1.8’.
 * add 'Height Profile' to grating field.
 
 ### 1, For crystal, there are following updating:
-* the orientation parameters will be updated synchronously with ‘grazing angle’
-* the orientation parameters in propagator will be updated synchronously.
+* the orientation parameters in "Geometry" will be updated synchronously with ‘photon energy’, 'Diffraction plane angle' and 'Asymmetry angle'.
+* the orientation parameters in "Propagation" will be updated synchronously.
 * add 'Height Profile' to grating field.
+* Both "Crystal reflecting planes d-spacing[A]" in "Geometry" and "Polarizability" are disabled when "Material of the crystal" in "Material" is not "unknown".
+* "Orientation of Reflection Plane" in "Height Profile" is synchronized with "Diffraction plane(roll) angle [rad]" in "Geometry".
