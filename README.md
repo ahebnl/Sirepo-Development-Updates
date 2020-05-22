@@ -63,12 +63,18 @@ The correct values should be ‘Manual’ and ‘-1.8’.
 
 ### 2, For grating, there are following updating:
 * add “Compute Parameters from”, then when input ‘energy’ and ‘cff’ (or ‘grazing angle’), it will automatically calculate ‘grazing angle’ (or ‘cff’).
-* the orientation parameters will be updated synchronously with ‘grazing angle’
-* the orientation parameters in propagator will be updated synchronously.
+* the orientation parameters in 'Geometry' field will be disabled and updated synchronously with ‘grazing angle’ when 'Compute Parameters from' is chosen 'Cff' or 'Grazing Angle'.
+* the orientation parameters in 'Geometry' field can be manually set when when 'Compute Parameters from' is chosen ''Manually.
+* the orientation parameters in "Propagation" will be updated synchronously.
 * add 'Height Profile' to grating field.
-
+* "Orientation of Reflection Plane" in "Height Profile" is synchronized with "Roll Angle [rad]" in "Geometry".        
+```
+        if abs(angroll) < np.pi/4 or abs(angroll-np.pi) < np.pi/4:
+            model['orientation'] = 'y'
+        else: model['orientation'] = 'x'
+```
 ### 1, For crystal, there are following updating:
-* the orientation parameters in "Geometry" will be updated synchronously with ‘photon energy’, 'Diffraction plane angle' and 'Asymmetry angle'.
+* the orientation parameters in "Geometry" will be updated synchronously with ‘photon energy’, 'Diffraction plane angle' and 'Asymmetry angle'
 * the orientation parameters in "Propagation" will be updated synchronously.
 * add 'Height Profile' to grating field.
 * Both "Crystal reflecting planes d-spacing[A]" in "Geometry" and "Polarizability" are disabled when "Material of the crystal" in "Material" is not "unknown".
