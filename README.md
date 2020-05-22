@@ -52,6 +52,9 @@ Before I do the fixing, I need confirm that ‘Sampling Method -> Manual and Num
 " by An's reply
 
 ### 4_02, fixed the issue with initial conditions for e- trajectory for all examples.
+this issue was reported by Oleg through email:
+"We were observing some strange behaviors of recent versions of Sirepo related to setting initial conditions for calculating electron trajectory and all other dependent calculations. 
+I am attaching a zip-file generated on our simulation server at NSLS-II (https://expdev.nsls2.bnl.gov/, inside BNL firewall). I tried to import this simulation file to https://www.sirepo.com/srw#/simulations, and had an issue that the electron trajectory gets “tilted”, and all subsequent results become wrong. This happens because on our server, the initial conditions for the trajectory are specified “automatically” before undulator (at -1.54 m long. pos.), whereas after the import to https://www.sirepo.com/, they appear to be set at zero long. pos., i.e. in the middle of undulator......"
 
 The correct values should be ‘Manual’ and ‘-1.8’.
 ### ![ebeam_initial](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/ebeam_initial.PNG)
