@@ -2,7 +2,7 @@
 # Sirepo-Development-Updates
 this records the sirepo developments from NSLS-II
 
-### 10, will do : add 'wm_fbk' to script...........
+### 12, will do : add 'wm_fbk' to script...........
 
 Before running a Sirepo-generated script of NERSC, you should add this option in it:
 
@@ -13,33 +13,33 @@ By default, this option is not set in the srwl_bl.py file (see https://github.co
 BTW, I am using now RadiaSoft's Sirepo version for direct simulations at NERSC, in the Debug queue. Great development! I have even prepared a happy slide on this for DOE (see slide #15 in the attached file).
 Though this "'wm_fbk " option still has to be added in Sirepo and used there; maybe we can do this and make a pull request to RadiaSoft?.
 
-### 9, the separate tab "Grid Shift" to the "Propagation Parameters" dialog
+### 11, the separate tab "Grid Shift" to the "Propagation Parameters" dialog
 [example script](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/sxn_v02_250ev_realzp-debug-intensity-watchpoint-56753227m_oc.py)
 ### ![grid shift](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/propagator_gridshift.PNG)
 
 
-### 8, the modification of official beamline logo in light-source page
+### 10, the modification of official beamline logo in light-source page
 ```
 https://expdev-test.nsls2.bnl.gov/light#/light-sources
 ```
 ### ![light-sources](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/light-sources.PNG)
 
-### 7, "demo videos" is ready to be added
+### 9, "demo videos" is ready to be added
 ### ![demo_video](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/demo_video.PNG)
 [demo_note](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/video-audio-template.txt)
 
-### 6, disable "user register".
+### 8, disable "user register".
 
-### 5, 3D beamline plot generation without wavefront propagation calculation is done; 
+### 7, 3D beamline plot generation without wavefront propagation calculation is done; 
 ### ['op_fno', 's', 'beamline_orient.dat', 'file name for saving orientations of optical elements in the lab frame'] only show for "3D beamline".....
 
-### 4_01, fixed the following 'Sampling Method' issues in "Intensity, 20m" report:
+### 6, fixed the following 'Sampling Method' issues in "Intensity, 20m" report:
 The issues were reported by Oleg through email: 
 1) When I create a new simulation of “Electron Bean with Idealized Undulator”, Sirepo creates a U20 hard X-ray source with NSLS-II e-beam (which is good!). In the “Intensity, 20m” report , in the “pencil” menu, “Main” tab, the “Sampling Method” is by default set to “Automatic”, and “Sampling Factor” set by default to 1. I would like instead the “Sampling Method” to be set to “Manual”, without the “Sampling Factor” shown, and with the “Number of Points vs Position” set to 100 both for the Horizontal and Vertical positions. I note that this default setting should be only changed in the Source mage, and should not affect the default setting in the “Beamline” page (the latter one should remain as is, i.e. set to “Automatic” with “Sampling Factor” = 1 by default)."
 
 2) (Related to the previous, but different issue) Changing between “Sampling Method” “Automatic” and “Manual” setting does not result in disappearing and appearing the “Sampling Factor” and “Number of Points vs Position” input boxes in that dialog, as it should be, according to our logic: i.e. clicking on “Manual” button should make “Sampling Factor” instantly disappear and “Number of Points vs Position” instantly appear, and clicking on “Automatic” button the other way around (as it used to be some time ago, I think).
 
-### 4_02, fixed the following 'Sampling Method' issues for all example NSLS-II simulations in Sirepo:
+### 5, fixed the following 'Sampling Method' issues for all example NSLS-II simulations in Sirepo:
 The issue was reported by Oleg through email: 
 "I think the minor issue of the default intensity calculation method in our example calculations still takes place.
 E.g. the CHX’s default dialog from out test server looks like in the attached figure.
@@ -51,7 +51,7 @@ BTW, Sampling Factor = 0 switches off the “Automatic” sampling in SRW, so it
 Before I do the fixing, I need confirm that ‘Sampling Method -> Manual and Numbers of Points vs Position = 100, 100’ is for all these default examples. Right?
 " by An's reply
 
-### 4_02, fixed the issue with initial conditions for e- trajectory for all examples.
+### 4, fixed the issue with initial conditions for e- trajectory for all examples.
 this issue was reported by Oleg through email:
 "We were observing some strange behaviors of recent versions of Sirepo related to setting initial conditions for calculating electron trajectory and all other dependent calculations. 
 I am attaching a zip-file generated on our simulation server at NSLS-II (https://expdev.nsls2.bnl.gov/, inside BNL firewall). I tried to import this simulation file to https://www.sirepo.com/srw#/simulations, and had an issue that the electron trajectory gets “tilted”, and all subsequent results become wrong. This happens because on our server, the initial conditions for the trajectory are specified “automatically” before undulator (at -1.54 m long. pos.), whereas after the import to https://www.sirepo.com/, they appear to be set at zero long. pos., i.e. in the middle of undulator......"
