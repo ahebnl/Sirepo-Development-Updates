@@ -33,7 +33,9 @@ https://expdev-test.nsls2.bnl.gov/light#/light-sources
 ### 5, 3D beamline plot generation without wavefront propagation calculation is done; 
 ### ['op_fno', 's', 'beamline_orient.dat', 'file name for saving orientations of optical elements in the lab frame'] only show for "3D beamline".....
 
-### 4, fixed the issue with initial conditions for e- trajectory for all examples.
+### 4_01, fixed the 'Sampling Method' in "Intensity, 20m" report:
+"from Oleg's email: 1) When I create a new simulation of “Electron Bean with Idealized Undulator”, Sirepo creates a U20 hard X-ray source with NSLS-II e-beam (which is good!). In the “Intensity, 20m” report , in the “pencil” menu, “Main” tab, the “Sampling Method” is by default set to “Automatic”, and “Sampling Factor” set by default to 1. I would like instead the “Sampling Method” to be set to “Manual”, without the “Sampling Factor” shown, and with the “Number of Points vs Position” set to 100 both for the Horizontal and Vertical positions. I note that this default setting should be only changed in the Source mage, and should not affect the default setting in the “Beamline” page (the latter one should remain as is, i.e. set to “Automatic” with “Sampling Factor” = 1 by default)."
+### 4_02, fixed the issue with initial conditions for e- trajectory for all examples.
 
 The correct values should be ‘Manual’ and ‘-1.8’.
 ### ![ebeam_initial](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/ebeam_initial.PNG)
