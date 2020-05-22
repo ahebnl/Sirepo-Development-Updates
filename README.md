@@ -33,8 +33,24 @@ https://expdev-test.nsls2.bnl.gov/light#/light-sources
 ### 5, 3D beamline plot generation without wavefront propagation calculation is done; 
 ### ['op_fno', 's', 'beamline_orient.dat', 'file name for saving orientations of optical elements in the lab frame'] only show for "3D beamline".....
 
-### 4_01, fixed the 'Sampling Method' in "Intensity, 20m" report:
-"from Oleg's email: 1) When I create a new simulation of “Electron Bean with Idealized Undulator”, Sirepo creates a U20 hard X-ray source with NSLS-II e-beam (which is good!). In the “Intensity, 20m” report , in the “pencil” menu, “Main” tab, the “Sampling Method” is by default set to “Automatic”, and “Sampling Factor” set by default to 1. I would like instead the “Sampling Method” to be set to “Manual”, without the “Sampling Factor” shown, and with the “Number of Points vs Position” set to 100 both for the Horizontal and Vertical positions. I note that this default setting should be only changed in the Source mage, and should not affect the default setting in the “Beamline” page (the latter one should remain as is, i.e. set to “Automatic” with “Sampling Factor” = 1 by default)."
+### 4_01, fixed the following 'Sampling Method' issues in "Intensity, 20m" report:
+The issues were reported by Oleg through email: 
+1) When I create a new simulation of “Electron Bean with Idealized Undulator”, Sirepo creates a U20 hard X-ray source with NSLS-II e-beam (which is good!). In the “Intensity, 20m” report , in the “pencil” menu, “Main” tab, the “Sampling Method” is by default set to “Automatic”, and “Sampling Factor” set by default to 1. I would like instead the “Sampling Method” to be set to “Manual”, without the “Sampling Factor” shown, and with the “Number of Points vs Position” set to 100 both for the Horizontal and Vertical positions. I note that this default setting should be only changed in the Source mage, and should not affect the default setting in the “Beamline” page (the latter one should remain as is, i.e. set to “Automatic” with “Sampling Factor” = 1 by default)."
+
+2) (Related to the previous, but different issue) Changing between “Sampling Method” “Automatic” and “Manual” setting does not result in disappearing and appearing the “Sampling Factor” and “Number of Points vs Position” input boxes in that dialog, as it should be, according to our logic: i.e. clicking on “Manual” button should make “Sampling Factor” instantly disappear and “Number of Points vs Position” instantly appear, and clicking on “Automatic” button the other way around (as it used to be some time ago, I think).
+
+### 4_02, fixed the following 'Sampling Method' issues for all example NSLS-II simulations in Sirepo:
+The issue was reported by Oleg through email: 
+"I think the minor issue of the default intensity calculation method in our example calculations still takes place.
+E.g. the CHX’s default dialog from out test server looks like in the attached figure.
+I would strongly prefer that instead of Sampling Method -> Automatic and Sampling Factor = 0 it would be by default (on the Source page only!): Sampling Method -> Manual and Numbers of Points vs Position = 100, 100.
+
+BTW, Sampling Factor = 0 switches off the “Automatic” sampling in SRW, so it should not be used by default even with the Sampling Method -> Automatic (we can use our nominal default value Sampling Factor = 1 when one would try to set Sampling Method -> Automatic first time)."
+
+"It can be fixed by modifying these examples’ json files one by one. 
+Before I do the fixing, I need confirm that ‘Sampling Method -> Manual and Numbers of Points vs Position = 100, 100’ is for all these default examples. Right?
+" by An's reply
+
 ### 4_02, fixed the issue with initial conditions for e- trajectory for all examples.
 
 The correct values should be ‘Manual’ and ‘-1.8’.
