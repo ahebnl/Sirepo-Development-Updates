@@ -1,6 +1,12 @@
 
 # Sirepo-Development-Updates
 this records the sirepo developments from NSLS-II
+### 13, fixed the grating issue: 
+https://github.com/ahebnl/sirepo/commit/e961f4ae3e510a6eb1f4a72a47a8b0262076ffd2
+
+this issue was reported by Oleg:
+"Meanwhile, I’ve noticed a strange thing at automatic calculation of coordinated of base vectors for grating, see the attached screen snapshot for the grating of CSX-1 beamline at expdev-test. I deliberately changed some input params in this dialog. When I’ve set there: Compute Params from Grazing Angle, Grazing Angle -> 26.18 mrad and Roll Angle -> 0 (btw, by default it was Pi, which produced wrong simulation results), I get the automatically calculated Vertical Coordinate of the Central Tangential Vector equal to 0.026185206696, whereas it should probably be sin(26.18e-03) = 0.0261770095… This may be quite a significant difference in some cases. I wonder, can you reproduce this with your browser? If so, where the precision is lost – in the functions that I / we’ve added recently in srwlib.py, or somewhere else?"
+
 
 ### 12, To add 'wm_fbk' to script...........(not yet)
 
