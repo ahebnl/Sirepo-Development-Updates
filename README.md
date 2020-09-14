@@ -1,6 +1,14 @@
 
 # Sirepo-Development-Updates
+
 this records the sirepo developments from NSLS-II
+
+### 14 add CSX beamline to the light page list......
+
+Can you please add the CSX beamline to this list?
+Its simulation, e.g. here: https://www.sirepo.com/srw#/source/Wy8pYVjo
+Is in good shape.
+
 ### 13(all done in Aug 2020), fixed the grating issue: 
 https://github.com/ahebnl/sirepo/commit/e961f4ae3e510a6eb1f4a72a47a8b0262076ffd2
 
