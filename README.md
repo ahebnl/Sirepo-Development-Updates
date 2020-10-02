@@ -2,8 +2,10 @@
 # Sirepo-Development-Updates
 
 this records the sirepo developments from NSLS-II
+### 15 add the crop function to the 3D plot (done 20201001)
 
-### 14 add CSX beamline to the light page list......
+
+### 14 add CSX beamline to the light page list (done 20200910)
 
 Can you please add the CSX beamline to this list?
 Its simulation, e.g. here: https://www.sirepo.com/srw#/source/Wy8pYVjo
