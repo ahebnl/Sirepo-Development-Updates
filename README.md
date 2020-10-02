@@ -3,7 +3,7 @@
 
 this records the sirepo developments from NSLS-II
 ### 15 add the crop function to the 3D plot (done 20201001)
-
+### ![crop plot](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/3d%20plot%20crop%20function.PNG)
 
 ### 14 add CSX beamline to the light page list (done 20200910)
 
