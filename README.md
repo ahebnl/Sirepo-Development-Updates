@@ -2,6 +2,12 @@
 # Sirepo-Development-Updates
 
 this records the sirepo developments from NSLS-II
+
+### 16 updates for the crop function  (done 20201028)
+1. combined “Scale” and “Rotation” to “Image Presentation”.
+2. Using “center” and “range” to present the horizontal and vertical length of the plot.
+3. Using the initial plot ranges as the initial values of “Crop Plot”.
+
 ### 15 add the crop function to the 3D plot (done 20201001)
 ### ![crop plot](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/3d%20plot%20crop%20function.PNG)
 
