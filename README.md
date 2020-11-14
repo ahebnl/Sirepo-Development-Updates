@@ -2,7 +2,9 @@
 # Sirepo-Development-Updates
 
 this records the sirepo developments from NSLS-II
-
+### 17 enable Crystal and disable CRL....(done 11/13/2020)
+       enable the values of polarizability when material of crystal is chosen "User-defined". (done 11/13/2020)
+       disable "calculate analytically" of CRL Material.
 ### 16 updates for the crop function  (done 20201028)
 1. combined “Scale” and “Rotation” to “Image Presentation”.
 2. Using “center” and “range” to present the horizontal and vertical length of the plot.
