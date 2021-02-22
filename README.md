@@ -2,6 +2,14 @@
 # Sirepo-Development-Updates
 
 this records the sirepo developments from NSLS-II
+### 20 Center the 2D plot after zoom in and out.....
+
+
+### 19 Rename some parameter of flat mirror from “Horizontal Transverse Size [mm]” and “Vertical Transverse Size [mm]” to “Horizontal Aperture Size [mm]” and “Vertical Aperture Size [mm]”  (done 2/22/2021)
+The issues were reported by Oleg through email: 
+For flat mirror we in Sirepo actually define the “transverse aperture” dimensions, that we – not fully correctly – call “Horizontal Transverse Size [mm]” and “Vertical Transverse Size [mm]”. Perhaps it would be more correct to call them “Horizontal Aperture [mm]” and “Vertical Aperture [mm]”, or “Horizontal Aperture Size [mm]”, or “Horizontal Transverse Aperture [mm]” etc.
+In other (focusing) mirrors, we define their ~actual dimensions, that are close to Joe’s “optical dimensions” (tangential and sagittal). Ideally, we would “harmonize” these things, and introduce the tangential and sagittal dimensions instead of the aperture sizes for the flat mirrors too. 
+
 ### 18 add average photon energy to zone plate field (done 2/2/2021)
 ### ![crop plot](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/ZonePlane_averageenergy.PNG)
 
