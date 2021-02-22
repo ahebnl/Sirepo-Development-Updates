@@ -2,8 +2,9 @@
 # Sirepo-Development-Updates
 
 this records the sirepo developments from NSLS-II
-### 20 Center the 2D plot after zoom in and out.....
+### 21 Center the 2D plot after zoom in and out.....
 
+### 20 2D plot's resolution is not enough, it can not show the resolution of the data file correctly. for example for the Zone Plate intensity distribution.....
 
 ### 19 Rename some parameter of flat mirror from “Horizontal Transverse Size [mm]” and “Vertical Transverse Size [mm]” to “Horizontal Aperture Size [mm]” and “Vertical Aperture Size [mm]”  (done 2/22/2021)
 The issues were reported by Oleg through email: 
