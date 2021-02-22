@@ -3,6 +3,7 @@
 
 this records the sirepo developments from NSLS-II
 ### 18 add average photon energy to zone plate field (done 2/2/2021)
+### ![crop plot](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/ZonePlane_averageenergy.PNG)
 
 ### 17 enable Crystal and disable CRL....(done 11/13/2020)
        enable the values of polarizability when material of crystal is chosen "User-defined". (done 11/13/2020)
