@@ -4,7 +4,18 @@
 this records the sirepo developments from NSLS-II
 ### 21 Center the 2D plot after zoom in and out.....
 
-### 20 2D plot's resolution is not enough, it can not show the resolution of the data file correctly. for example for the Zone Plate intensity distribution.....
+### 20 2D plot's resolution is not enough, it can not show the resolution of the data file correctly. for example for the Zone Plate intensity distribution.....(done 3/17/2021)
+The under-sampling issue when plotting the real Zone plate intensity plot  has been fixed. It was due to the down sampling.
+
+My guess is, the down sampling prevents transferring too large data set across network (may even exceeds the limits),
+Or when too many points on limited pixels of canvas. The down sampling code is 
+https://github.com/radiasoft/sirepo/blob/46a9eac198ade133058d3f0c37f8ff0c2da5942a/sirepo/template/srw.py#L1615
+
+The "original size" is misleading, I think it is better called "canvas size" (set _CANVAS_MAX_SIXE=16384)
+
+The solution is add a very large number, e.g. 2^32 as an additional choice of "canvas size", so no down sampling will occur, but potentially
+If the raw dataset is too large, it may exceed the transfer limit (I do not know what the number is). 
+
 
 ### 19 Rename some parameter of flat mirror from “Horizontal Transverse Size [mm]” and “Vertical Transverse Size [mm]” to “Horizontal Aperture Size [mm]” and “Vertical Aperture Size [mm]”  (done 2/22/2021)
 The issues were reported by Oleg through email: 
