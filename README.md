@@ -9,13 +9,14 @@ The under-sampling issue when plotting the real Zone plate intensity plot  has b
 
 My guess is, the down sampling prevents transferring too large data set across network (may even exceeds the limits),
 Or when too many points on limited pixels of canvas. The down sampling code is 
-https://github.com/radiasoft/sirepo/blob/46a9eac198ade133058d3f0c37f8ff0c2da5942a/sirepo/template/srw.py#L1615
+### ![crop plot](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/downsampling01.png)
+### ![crop plot](https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/downsampling02.png)
 
 The "original size" is misleading, I think it is better called "canvas size" (set _CANVAS_MAX_SIXE=16384)
 
 The solution is add a very large number, e.g. 2^32 as an additional choice of "canvas size", so no down sampling will occur, but potentially
 If the raw dataset is too large, it may exceed the transfer limit (I do not know what the number is). 
-
+https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/downsampling01.PNG
 
 ### 19 Rename some parameter of flat mirror from “Horizontal Transverse Size [mm]” and “Vertical Transverse Size [mm]” to “Horizontal Aperture Size [mm]” and “Vertical Aperture Size [mm]”  (done 2/22/2021)
 The issues were reported by Oleg through email: 
