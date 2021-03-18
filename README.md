@@ -16,7 +16,7 @@ The "original size" is misleading, I think it is better called "canvas size" (se
 
 The solution is add a very large number, e.g. 2^32 as an additional choice of "canvas size", so no down sampling will occur, but potentially
 If the raw dataset is too large, it may exceed the transfer limit (I do not know what the number is). 
-https://github.com/ahebnl/Sirepo-Development-Updates/blob/master/downsampling01.PNG
+https://github.com/radiasoft/sirepo/blob/46a9eac198ade133058d3f0c37f8ff0c2da5942a/sirepo/template/srw.py#L1615
 
 ### 19 Rename some parameter of flat mirror from “Horizontal Transverse Size [mm]” and “Vertical Transverse Size [mm]” to “Horizontal Aperture Size [mm]” and “Vertical Aperture Size [mm]”  (done 2/22/2021)
 The issues were reported by Oleg through email: 
